@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Officer Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #ff9800, #ffeb3b);
+        }
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .card {
+            border-radius: 10px;
+        }
+        .card-header {
+            font-weight: bold;
+        }
+        footer {
+            background: #ff9800;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="ppclogo.jpg" alt="Logo">
+            Placement Officer
+        </a>
+        <div class="ms-auto d-flex align-items-center">
+            <span class="me-3 fw-bold">Welcome, Officer</span>
+             <button type="button" class="btn btn-primary w-100" onclick="window.location.href='officer.html'">LOGOUT</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Container -->
+<div class="container my-4">
+
+    <!-- KPI Cards -->
+    <div class="row text-center mb-4">
+        <div class="col-md-2">
+            <div class="card p-3 shadow">
+                <h6>Total Students</h6>
+                <h4>120</h4>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 shadow">
+                <h6>Jobs Posted</h6>
+                <h4>8</h4>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 shadow">
+                <h6>Applications</h6>
+                <h4>45</h4>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 shadow">
+                <h6>Upcoming Interviews</h6>
+                <h4>3</h4>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card p-3 shadow">
+                <h6>Aptitude Tests</h6>
+                <h4>5</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Management -->
+    <div class="card shadow mb-4">
+        <div class="card-header bg-warning d-flex justify-content-between">
+            <span>Job Management</span>
+            <button class="btn btn-primary btn-sm">+ Post New Job</button>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Deadline</th>
+                        <th>Applications</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Software Engineer</td>
+                        <td>ABC Tech</td>
+                        <td>20 Aug 2025</td>
+                        <td>12</td>
+                        <td>
+                            <button class="btn btn-info btn-sm">View</button>
+                            <button class="btn btn-warning btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Data Analyst</td>
+                        <td>XYZ Solutions</td>
+                        <td>25 Aug 2025</td>
+                        <td>8</td>
+                        <td>
+                            <button class="btn btn-info btn-sm">View</button>
+                            <button class="btn btn-warning btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Student Management -->
+    <div class="card shadow mb-4">
+        <div class="card-header bg-warning">Student Management</div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Department</th>
+                        <th>Applied Jobs</th>
+                        <th>Resume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rahul Kumar</td>
+                        <td>21MCA001</td>
+                        <td>MCA</td>
+                        <td>3</td>
+                        <td><button class="btn btn-success btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Priya Singh</td>
+                        <td>21MCA002</td>
+                        <td>MCA</td>
+                        <td>2</td>
+                        <td><button class="btn btn-success btn-sm">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Govt Exam Alerts -->
+    <div class="card shadow mb-4">
+        <div class="card-header bg-warning d-flex justify-content-between">
+            <span>Government Exam Alerts</span>
+            <button class="btn btn-primary btn-sm">+ Add Exam</button>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>SSC CGL - 15 Sept 2025 - <a href="#">View Details</a></li>
+                <li>Bank PO - 30 Sept 2025 - <a href="#">View Details</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
